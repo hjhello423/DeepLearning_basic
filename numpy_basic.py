@@ -33,3 +33,21 @@ print(A * 10)
 [[10 20]
  [30 40]]
 """
+
+A = np.array([[1,2], [3,4]])
+print(A.dtype)#행렬에 담긴 원소의 자료형
+
+A = np.array([[1,2], [3,4]])
+B = np.array([10, 20])
+print(A * B)#브로드캐스트 -> B행렬이 2*2로 확대후 연산
+"""
+[[10 40]
+ [30 80]]
+"""
+
+X = np.array([[10,20], [30,40], [50,60]])
+X = X.flatten()#1차원 배열로 평탄화
+print(X)#[10 20 30 40 50 60]
+print(X[np.array([1, 3, 5])])#1,3,5번 index 원소 반환 => [20 40 60]
+print(X > 40)#[False False False False  True  True]
+print(X < 30)#[ True  True False False False False]
