@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.image import imread
 
 x = np.arange(0, 6, 0.1)#0~6까지 0.1 간격으로 생성
 print(x)
@@ -21,4 +22,10 @@ plt.xlabel("X")
 plt.ylabel("y")
 plt.title('sin & cos')#제목 표시
 plt.legend()#legend 표시
+plt.show()
+
+
+img = imread('dataset/lena.png')#이미지 불러오기
+
+plt.imshow(img)
 plt.show()
