@@ -20,5 +20,5 @@ if __name__ == '__main__':
     x = np.arange(-5.0, 5.0, 0.1)
     y = step_function_plot(x)
     plt.plot(x, y)
-    plt.ylim(-0.1, 1.1)
+    plt.ylim(-0.1, 1.1)#y축 범위 지정
     plt.show()#계단함수 그리기
